@@ -34,14 +34,6 @@ docsRouter.post("/add-doctor", async (req: Request, res: Response)=> {
                 throw new Error("Error !! Id is not entered or resourceType is not Practioner");
             }
         }
-        // if(doc.id != null && doc.resourceType == "Practioner"){
-        //     if(doc.active == true) {
-        //         console.log(`Doctor name:${JSON.stringify(doc.name)} and doctor facility:${JSON.stringify(doc.facility)}`);
-        //     }
-        // } else {
-        //     throw new Error("Error !! Id is not entered or resourceType is not Practioner");
-        // }
-        
         res.status(201).json(newDoc);
     } catch (e) {
         res.status(500).send(e.message);
