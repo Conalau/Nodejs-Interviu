@@ -37,7 +37,7 @@ let docs : Docs = {
  */
 
 export const create = async (newDoc : BaseDoc): Promise<Doc> => {
-    const id = new Date().valueOf();
+    const id = new Number().valueOf();
     docs[id] = {
         id,
        ...newDoc 
