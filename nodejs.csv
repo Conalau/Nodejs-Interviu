@@ -1,0 +1,7 @@
+ID,FamilyName,GivenName,FacilityId,SystemId,NameId,Active
+1 , Popescu  , George  ,    12    , http://ro.gov/NPI, Spital Tulcea, true
+1 , Popescu  , George  ,    13    , http://ro.gov/NPI, Spital Sfantul Gheorghe, true
+1 , Popescu  , George  ,    13    , http://ro.gov/NPI, Spital Constanta, true
+2 , Ionescu  , Catalin ,    12    , http://ro.gov/NPI, Spital Tulcea, true
+3 , Georgescu , Mihai ,     13    , http://ro.gov/NPI , Spital Constanta
+3 , Georgescu , Mihai ,     13    , http://ro.gov/NPI, Spital Universitar Bucuresti, true
