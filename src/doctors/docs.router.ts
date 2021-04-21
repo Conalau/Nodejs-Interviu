@@ -71,7 +71,9 @@ docsRouter.post("/doctors",checkBase64, async(req: any, res:Response) => {
                         if(arrDoctors.filter(e => e.Active == true)) {
                            let doc = arrDoctors.find(elem => elem.ID == row.ID);
                             if(doc.NameId.toLowerCase().search(row.NameId.toLowerCase()) == -1){
-                                doc.NameId += ' ,' + row.NameId;
+                                if(obj.facility.includes(doc.FacilityId)){
+                                    doc.NameId += ' ,' + row.NameId;
+                                }
                             } 
                         }
                     }  else {
