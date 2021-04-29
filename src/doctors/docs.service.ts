@@ -1,13 +1,6 @@
-/**
- * Data Model Interfaces
- */
 
 import {BaseDoc, Doc } from "./doc.interface";
 import { Docs } from "./docs.interface";
-
-/**
- * In-Memory Databse
- */
 
 let docs : Docs = {
     1 : {
@@ -30,11 +23,6 @@ let docs : Docs = {
         active : true
     }
     };
-
-
-/**
- * Service Methods
- */
 
 export const create = async (newDoc : BaseDoc): Promise<Doc> => {
     const id = new Number().valueOf();
